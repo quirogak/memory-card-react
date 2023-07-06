@@ -1,0 +1,34 @@
+#title-wrapper {
+    margin: 10px;
+    padding: 35px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(14, 14, 14);
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
+}
+
+h1,
+h2 {
+    color: rgb(190, 145, 19);
+    font-weight: 100;
+    margin: 0;
+
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}

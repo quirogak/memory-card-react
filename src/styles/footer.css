@@ -1,0 +1,21 @@
+footer {
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: rgb(190, 145, 19);
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 0.9rm;
+    margin: 3px;
+}
+
+a:visited {
+    color: rgb(190, 145, 19);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(190, 145, 19);
+}
