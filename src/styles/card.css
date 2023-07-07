@@ -1,0 +1,39 @@
+.card {
+    height: 35.5vh;
+    width: 295px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+figure {
+    border-radius: 10px;
+    height: 97%;
+    width: 96%;
+    margin: 0;
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5px;
+}
+
+figcaption {
+    font-size: 1.4rem;
+    color: white;
+}
+
+img {
+    border-radius: 8px;
+    width: 97%;
+    height: 300px;
+    overflow: hidden;
+}
