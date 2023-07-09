@@ -1,10 +1,10 @@
 import "../styles/scoreboard.css"
-const Scoreboard = () => {
+const Scoreboard = (props) => {
     return (
         <section id="scoreboard">
             <div id="scoreboard-wrapper">
-                <p>Current Score: 0</p>
-                <p>Best Score: 0</p>
+                <p>Current Score: {props.score}</p>
+                <p>Best Score: {props.bestScore}</p>
             </div>
         </section>
     )
