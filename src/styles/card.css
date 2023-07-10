@@ -36,4 +36,6 @@ img {
     width: 97%;
     height: 300px;
     overflow: hidden;
+    object-fit: cover;
+    object-position: 50% 20%;
 }
