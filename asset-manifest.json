@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/memory-card-react/static/css/main.ebe80b59.css",
+    "main.js": "/memory-card-react/static/js/main.52df1f2b.js",
+    "static/media/aragorn.jpg": "/memory-card-react/static/media/aragorn.6a4aaee67f5639129199.jpg",
+    "static/media/bilbo.jpg": "/memory-card-react/static/media/bilbo.7ba85fa395a0d68d41b8.jpg",
+    "static/media/galadriel.jpg": "/memory-card-react/static/media/galadriel.8456f7e62b25eb445790.jpg",
+    "static/media/thorin.jpg": "/memory-card-react/static/media/thorin.464b2286e2200b933c15.jpg",
+    "static/media/gollum.jpg": "/memory-card-react/static/media/gollum.f360df23b513e513f46d.jpg",
+    "static/media/legolas.jpg": "/memory-card-react/static/media/legolas.08c0c39fdd6e8f3cff71.jpg",
+    "static/media/gandalf.jpg": "/memory-card-react/static/media/gandalf.87e00d707a025f3400c6.jpg",
+    "static/media/samsagaz.jpg": "/memory-card-react/static/media/samsagaz.f6f055cce591abfb2610.jpg",
+    "static/media/saruman.jpg": "/memory-card-react/static/media/saruman.b624e23de2e9e5770f2d.jpg",
+    "static/media/gimli.jpg": "/memory-card-react/static/media/gimli.b787bc71a56653825ae7.jpg",
+    "static/media/frodo.jpg": "/memory-card-react/static/media/frodo.82335b54861c4e0e10ce.jpg",
+    "static/media/sauron.jpg": "/memory-card-react/static/media/sauron.3268149d10d9457663dd.jpg",
+    "index.html": "/memory-card-react/index.html",
+    "main.ebe80b59.css.map": "/memory-card-react/static/css/main.ebe80b59.css.map",
+    "main.52df1f2b.js.map": "/memory-card-react/static/js/main.52df1f2b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebe80b59.css",
+    "static/js/main.52df1f2b.js"
+  ]
+}
