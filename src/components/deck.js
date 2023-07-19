@@ -1,23 +1,8 @@
 import Card from "./card";
 import { useState } from "react";
-import uniqid from "uniqid";
 import "../styles/deck.css";
 import Scoreboard from "./scoreboard";
-
-const CardsInfo = [
-  { listId: 0, name: "Aragorn", imgSrc: require("../img/aragorn.jpg") },
-  { listId: 1, name: "Legolas", imgSrc: require("../img/legolas.jpg") },
-  { listId: 2, name: "Bilbo", imgSrc: require("../img/bilbo.jpg") },
-  { listId: 3, name: "Frodo", imgSrc: require("../img/frodo.jpg") },
-  { listId: 4, name: "Gandalf", imgSrc: require("../img/gandalf.jpg") },
-  { listId: 5, name: "Gollum", imgSrc: require("../img/gollum.jpg") },
-  { listId: 6, name: "Samsagaz", imgSrc: require("../img/samsagaz.jpg") },
-  { listId: 7, name: "Gimli", imgSrc: require("../img/gimli.jpg") },
-  { listId: 8, name: "Sauron", imgSrc: require("../img/sauron.jpg") },
-  { listId: 9, name: "Thorin", imgSrc: require("../img/thorin.jpg") },
-  { listId: 10, name: "Saruman", imgSrc: require("../img/saruman.jpg") },
-  { listId: 11, name: "Galadriel", imgSrc: require("../img/galadriel.jpg") },
-];
+import CardsInfo from "./data";
 
 const Deck = () => {
   const [randomize, setRandomize] = useState(false);
@@ -35,18 +20,18 @@ const Deck = () => {
   };
 
   const deckArray = [
-    <Card key={uniqid()} cardInfo={CardsInfo[0]} {...stateProps}></Card>,
-    <Card key={uniqid()} cardInfo={CardsInfo[1]} {...stateProps}></Card>,
-    <Card key={uniqid()} cardInfo={CardsInfo[2]} {...stateProps}></Card>,
-    <Card key={uniqid()} cardInfo={CardsInfo[3]} {...stateProps}></Card>,
-    <Card key={uniqid()} cardInfo={CardsInfo[4]} {...stateProps}></Card>,
-    <Card key={uniqid()} cardInfo={CardsInfo[5]} {...stateProps}></Card>,
-    <Card key={uniqid()} cardInfo={CardsInfo[6]} {...stateProps}></Card>,
-    <Card key={uniqid()} cardInfo={CardsInfo[7]} {...stateProps}></Card>,
-    <Card key={uniqid()} cardInfo={CardsInfo[8]} {...stateProps}></Card>,
-    <Card key={uniqid()} cardInfo={CardsInfo[9]} {...stateProps}></Card>,
-    <Card key={uniqid()} cardInfo={CardsInfo[10]} {...stateProps}></Card>,
-    <Card key={uniqid()} cardInfo={CardsInfo[11]} {...stateProps}></Card>,
+    <Card key={CardsInfo[0].key} cardInfo={CardsInfo[0]} {...stateProps}></Card>,
+    <Card key={CardsInfo[1].key} cardInfo={CardsInfo[1]} {...stateProps}></Card>,
+    <Card key={CardsInfo[2].key} cardInfo={CardsInfo[2]} {...stateProps}></Card>,
+    <Card key={CardsInfo[3].key} cardInfo={CardsInfo[3]} {...stateProps}></Card>,
+    <Card key={CardsInfo[4].key} cardInfo={CardsInfo[4]} {...stateProps}></Card>,
+    <Card key={CardsInfo[5].key} cardInfo={CardsInfo[5]} {...stateProps}></Card>,
+    <Card key={CardsInfo[6].key} cardInfo={CardsInfo[6]} {...stateProps}></Card>,
+    <Card key={CardsInfo[7].key} cardInfo={CardsInfo[7]} {...stateProps}></Card>,
+    <Card key={CardsInfo[8].key} cardInfo={CardsInfo[8]} {...stateProps}></Card>,
+    <Card key={CardsInfo[9].key} cardInfo={CardsInfo[9]} {...stateProps}></Card>,
+    <Card key={CardsInfo[10].key} cardInfo={CardsInfo[10]} {...stateProps}></Card>,
+    <Card key={CardsInfo[11].key} cardInfo={CardsInfo[11]} {...stateProps}></Card>,
   ];
 
   const [currentDeck, setCurrentDeck] = useState(deckArray);

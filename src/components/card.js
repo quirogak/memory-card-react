@@ -40,7 +40,7 @@ const Card = (props) => {
       currentCard.removeEventListener("click", setRandomizeTrue);
       currentCard.removeEventListener("click", updateScoreboard);
     };
-  }, []);
+  },);
 
   return (
     <div className="card" id={currentId}>
