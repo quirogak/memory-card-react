@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import "../styles/card.css";
 
 const Card = (props) => {
@@ -29,21 +28,13 @@ const Card = (props) => {
     else addScore();
   };
 
-  useEffect(() => {
-    // call useEffect to add event handlers on componentDidMount.
-    const currentCard = document.getElementById(currentId);
-    currentCard.addEventListener("click", updateScoreboard);
-    currentCard.addEventListener("click", setRandomizeTrue);
-
-    return () => {
-      // remove listeners on componentWillUnmount.
-      currentCard.removeEventListener("click", setRandomizeTrue);
-      currentCard.removeEventListener("click", updateScoreboard);
-    };
-  },);
+  const updateAndRandomize = () => {
+    updateScoreboard()
+    setRandomizeTrue()
+  }
 
   return (
-    <div className="card" id={currentId}>
+    <div className="card" id={currentId} onClick={updateAndRandomize}>
       <figure>
         <img src={props.cardInfo.imgSrc} alt={props.cardInfo.name}></img>
         <figcaption>{props.cardInfo.name}</figcaption>
